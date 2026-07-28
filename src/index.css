@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #070608;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3d3852;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6b6480;
+  }
+}
+
+@keyframes ekgScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ekg {
+  animation: ekgScroll 4s linear infinite;
+}
+
+@keyframes ambulanceStrobe {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(239, 68, 68, 0.6), 0 0 50px rgba(239, 68, 68, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(14, 165, 233, 0.6), 0 0 50px rgba(14, 165, 233, 0.3);
+  }
+}
+
+.animate-ambulance-glow {
+  animation: ambulanceStrobe 2s ease-in-out infinite;
+}
+
+@keyframes sirenBeaconRed {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.85; }
+}
+
+@keyframes sirenBeaconBlue {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 0.15; }
+}
+
+.siren-red {
+  animation: sirenBeaconRed 1.2s ease-in-out infinite;
+}
+
+.siren-blue {
+  animation: sirenBeaconBlue 1.2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
