@@ -1,0 +1,6 @@
+{
+  "name": "أكاديمية الإسعافات الأولية الشاملة",
+  "description": "تطبيق تعليمي تفاعلي محاكي للإسعافات الأولية: التعامل مع غريب مغمى عليه، الإسعافات الطبية والجروح والكسور، والحرائق مع ساحة اختبارات متجددة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
